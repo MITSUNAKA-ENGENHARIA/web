@@ -6,14 +6,13 @@ export default function AboutUs() {
     <Container
       id="quemsomos"
       size={"3"}
-      style={{ background: "teal", padding: "2em" }}
+      style={{ padding: "2em" }}
     >
       <Flex
         direction={"row"}
         justify={"center"}
         align={"center"}
         gap={"8"}
-        style={{ background: "orange" }}
       >
         <Flex direction={"column"} style={{ maxWidth: "40%" }} gap={"5"}>
           <Heading>Quem Somos</Heading>
@@ -41,6 +40,7 @@ export default function AboutUs() {
             alt={"Quem Somos"}
             width={400}
             height={650}
+            style={{ borderRadius: "0.5em" }}
           />
         </div>
       </Flex>

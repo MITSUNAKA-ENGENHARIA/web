@@ -23,7 +23,7 @@ export default function Header() {
   };
 
   return (
-      <nav style={{ position: "fixed", width: "100%", zIndex: "999" }}>
+      <nav style={{ position: "fixed", top: "0", left: "0", width: "100%", zIndex: "999" }}>
         <Container size="3" style={containerStyle}>
           <Flex direction={"row"} justify={"between"} align={"center"}>
             <NavTabText href="#home">Home</NavTabText>
