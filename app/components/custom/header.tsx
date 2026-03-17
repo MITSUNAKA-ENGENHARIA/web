@@ -6,7 +6,7 @@ export default function Header() {
 
   const NavTabText = styled(Link)`
     && {
-      font-weight: 400;
+      font-weight: bolder;
       text-decoration: none;
 
       &:hover {
@@ -17,7 +17,7 @@ export default function Header() {
   `;
 
   const containerStyle: CSSProperties = {
-    background: "rgba(255,255,255,0.8)",
+    background: "rgba(255,255,255,1)",
     padding: "1rem",
     textAlign: "center",
   };
