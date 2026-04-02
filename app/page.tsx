@@ -8,7 +8,20 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Carousel />
+      <Carousel
+        imagesPaths={[
+          "/images/ban1.jpg",
+          "/images/ban2.webp",
+          "/images/coz1.webp",
+          "/images/coz2.webp",
+          "/images/quarto1.jpg",
+          "/images/quarto2.jpg",
+        ]}
+        imageDimensions={{
+          width: "100%",
+          height: "800px",
+        }}
+      />
       <AboutUs />
       <Services />
       <Contact />

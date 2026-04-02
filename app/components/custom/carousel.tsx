@@ -9,7 +9,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function Carousel() {
+interface Props {
+  imagesPaths: string[];
+  imageDimensions: { width: number | string; height: number | string };
+  autoDelay?: number;
+}
+
+export default function Carousel({
+  imagesPaths,
+  imageDimensions,
+  autoDelay,
+}: Props) {
   return (
     <Swiper
       id="home"
@@ -20,7 +30,7 @@ export default function Carousel() {
       navigation
       pagination={{ clickable: true }}
       autoplay={{
-        delay: 3000,
+        delay: autoDelay || 3000,
         disableOnInteraction: false,
       }}
       loop={true}
@@ -36,54 +46,24 @@ export default function Carousel() {
         },
       }}
     >
-      <SwiperSlide>
-        <Image
-          src={"/images/coz1.webp"}
-          alt="cozinha1"
-          width={1920}
-          height={800}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src={"/images/coz2.webp"}
-          alt="cozinha2"
-          width={1920}
-          height={800}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src={"/images/quarto1.jpg"}
-          alt="quarto1"
-          width={1920}
-          height={800}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src={"/images/quarto2.jpg"}
-          alt="quarto2"
-          width={1920}
-          height={800}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src={"/images/ban1.jpg"}
-          alt="banheiro1"
-          width={1920}
-          height={800}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src={"/images/ban2.webp"}
-          alt="banheiro2"
-          width={1920}
-          height={700}
-        />
-      </SwiperSlide>
+      {imagesPaths.map((i) => {
+        return (
+          <SwiperSlide
+            style={{ height: imageDimensions.height, position: "relative", width: imageDimensions.width }}
+            key={i}
+          >
+            <Image
+              src={i}
+              alt={i}
+              fill
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
+            />
+          </SwiperSlide>
+        );
+      })}
     </Swiper>
   );
 }

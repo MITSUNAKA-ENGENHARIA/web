@@ -6,8 +6,9 @@ export default function Header() {
 
   const NavTabText = styled(Link)`
     && {
-      font-weight: bolder;
+      font-weight: normal;
       text-decoration: none;
+      color: white;
 
       &:hover {
         text-decoration: underline;
@@ -17,7 +18,7 @@ export default function Header() {
   `;
 
   const containerStyle: CSSProperties = {
-    background: "rgba(255,255,255,1)",
+    background: "var(--blue-12)",
     padding: "1rem",
     textAlign: "center",
   };
@@ -33,9 +34,9 @@ export default function Header() {
             <NavTabText href="#contato">Contato</NavTabText>
             <Separator orientation={"vertical"} size={"2"} />
             <Flex gap={"3"} align={"center"}>
-              <InstagramLogoIcon width={20} height={20} />
+              <InstagramLogoIcon color="white" width={20} height={20} />
               <Link
-                style={{ color: "black", cursor: "pointer" }}
+                style={{ color: "white", cursor: "pointer" }}
                 href="https://www.instagram.com/mitsunakaengenharia"
                 target="_blank"
               >
