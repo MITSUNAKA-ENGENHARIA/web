@@ -38,50 +38,50 @@ export default function Carousel() {
     >
       <SwiperSlide>
         <Image
-          src={"https://picsum.photos/1920/800?random=7"}
-          alt="alksjdf"
+          src={"/images/coz1.webp"}
+          alt="cozinha1"
           width={1920}
           height={800}
         />
       </SwiperSlide>
       <SwiperSlide>
         <Image
-          src={"https://picsum.photos/1920/800?random=2"}
-          alt="alksjdf"
+          src={"/images/coz2.webp"}
+          alt="cozinha2"
           width={1920}
           height={800}
         />
       </SwiperSlide>
       <SwiperSlide>
         <Image
-          src={"https://picsum.photos/1920/800?random=5"}
-          alt="alksjdf"
+          src={"/images/quarto1.jpg"}
+          alt="quarto1"
           width={1920}
           height={800}
         />
       </SwiperSlide>
       <SwiperSlide>
         <Image
-          src={"https://picsum.photos/1920/800?random=1"}
-          alt="alksjdf"
+          src={"/images/quarto2.jpg"}
+          alt="quarto2"
           width={1920}
           height={800}
         />
       </SwiperSlide>
       <SwiperSlide>
         <Image
-          src={"https://picsum.photos/1920/800?random=4"}
-          alt="alksjdf"
+          src={"/images/ban1.jpg"}
+          alt="banheiro1"
           width={1920}
           height={800}
         />
       </SwiperSlide>
       <SwiperSlide>
         <Image
-          src={"https://picsum.photos/1920/800?random=10"}
-          alt="alksjdf"
+          src={"/images/ban2.webp"}
+          alt="banheiro2"
           width={1920}
-          height={800}
+          height={700}
         />
       </SwiperSlide>
     </Swiper>
