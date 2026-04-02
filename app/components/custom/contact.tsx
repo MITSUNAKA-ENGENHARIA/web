@@ -27,7 +27,7 @@ export default function Contact() {
       </Flex>
       <Flex gap={"3"} align={"center"}>
         <MobileIcon width={20} height={20} style={{ color: "white" }} />
-        <p style={{ color: "white" }}>(11) 90000-0000</p>
+        <p style={{ color: "white" }}>(11) 92531-9217</p>
       </Flex>
       <Flex gap={"3"} align={"center"}>
         <EnvelopeOpenIcon width={20} height={20} style={{ color: "white" }} />
