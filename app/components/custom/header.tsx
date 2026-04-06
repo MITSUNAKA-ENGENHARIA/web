@@ -27,11 +27,11 @@ export default function Header() {
       <nav style={{ position: "fixed", top: "0", left: "0", width: "100%", zIndex: "999" }}>
         <Container size="3" style={containerStyle}>
           <Flex direction={"row"} justify={"between"} align={"center"}>
-            <NavTabText href="#home">Home</NavTabText>
-            <NavTabText href="#quemsomos">Quem Somos</NavTabText>
-            <NavTabText href="#servicos">Serviços</NavTabText>
-            <NavTabText href="#obrasrealizadas">Obras Realizadas</NavTabText>
-            <NavTabText href="#contato">Contato</NavTabText>
+            <NavTabText href="/#home">Home</NavTabText>
+            <NavTabText href="/#quemsomos">Quem Somos</NavTabText>
+            <NavTabText href="/#servicos">Serviços</NavTabText>
+            <NavTabText href="/#contato">Contato</NavTabText>
+            <NavTabText href="/obras">Obras Realizadas</NavTabText>
             <Separator orientation={"vertical"} size={"2"} />
             <Flex gap={"3"} align={"center"}>
               <InstagramLogoIcon color="white" width={20} height={20} />

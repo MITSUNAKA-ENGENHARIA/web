@@ -8,22 +8,24 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Contact from "./contact";
 
 interface Props {
   imagesPaths: string[];
   imageDimensions: { width: number | string; height: number | string };
   autoDelay?: number;
+  rounded?: boolean;
 }
 
 export default function Carousel({
   imagesPaths,
   imageDimensions,
   autoDelay,
+  rounded,
 }: Props) {
   return (
     <Swiper
       id="home"
-      style={{ marginTop: "64px" }}
       modules={[Autoplay, Pagination]}
       spaceBetween={0}
       slidesPerView={1}
@@ -49,7 +51,14 @@ export default function Carousel({
       {imagesPaths.map((i) => {
         return (
           <SwiperSlide
-            style={{ height: imageDimensions.height, position: "relative", width: imageDimensions.width }}
+            style={{ 
+              height: imageDimensions.height, 
+              position: "relative", 
+              width: imageDimensions.width,
+              overflow: rounded ? "hidden" : undefined,
+              borderRadius: rounded ? "12px" : undefined,
+              
+            }}
             key={i}
           >
             <Image
