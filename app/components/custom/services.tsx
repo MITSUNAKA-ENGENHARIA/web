@@ -31,7 +31,6 @@ export default function Services() {
           </Flex>
         </Badge>
 
-        {/* Seta: horizontal em desktop, vertical em mobile */}
         <ArrowRightIcon
           width={24}
           height={24}

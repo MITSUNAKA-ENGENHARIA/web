@@ -151,7 +151,7 @@ export default function Header() {
             justifyContent: "space-between",
           }}
         >
-          {/* Logo */}
+          {/*logo*/}
           <Link
             href="/#home"
             style={{
@@ -170,7 +170,6 @@ export default function Header() {
             />
           </Link>
 
-          {/* Nav desktop */}
           <nav className="header-desktop" style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}>
             {NAV_LINKS.map((link) => (
               <Link
@@ -200,7 +199,7 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Social links desktop */}
+          {/*links*/}
           <div className="header-desktop" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
             <SocialPill
               href="https://www.instagram.com/mitsunakaengenharia"
@@ -215,7 +214,7 @@ export default function Header() {
             />
           </div>
 
-          {/* Mobile: ícones sociais + hambúrguer */}
+          {/*mobile icons*/}
           <div className="header-mobile" style={{ display: "none", alignItems: "center", gap: "0.6rem" }}>
             <SocialIcon
               href="https://www.instagram.com/mitsunakaengenharia"
@@ -250,7 +249,7 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Dropdown mobile */}
+        {/*mobile*/}
         {menuOpen && (
           <div
             className="header-mobile"

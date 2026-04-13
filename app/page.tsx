@@ -6,7 +6,6 @@ import Contact from "./components/custom/contact";
 export default function Home() {
   return (
     <>
-      {/* Altura do carousel via CSS responsivo */}
       <style>{`
         .carousel-wrapper .swiper,
         .carousel-wrapper .swiper-slide {

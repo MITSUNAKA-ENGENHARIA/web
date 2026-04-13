@@ -30,7 +30,7 @@ export default function Works() {
           paddingBottom: "0",
         }}
       >
-        {/* Título */}
+        {/*titulo*/}
         <div style={{ textAlign: "center", padding: "2.5rem 1.5rem 2.75rem" }}>
           <h1
             style={{
@@ -54,7 +54,7 @@ export default function Works() {
           />
         </div>
 
-        {/* Grid */}
+        {/*grid*/}
         <div
           style={{
             maxWidth: "1200px",
