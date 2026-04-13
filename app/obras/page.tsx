@@ -5,17 +5,14 @@ export default function Works() {
   const works = [
     {
       title: "Obra 1",
-      description: "Descrição da obra 1",
       images: ["/works/1/img1.jpg", "/works/1/img2.jpg", "/works/1/img3.jpg", "/works/1/img4.jpg"],
     },
     {
       title: "Obra 2",
-      description: "Descrição da obra 2",
       images: ["/works/2/img1.jpg", "/works/2/img2.jpg", "/works/2/img3.jpg", "/works/2/img4.jpg"],
     },
     {
       title: "Obra 3",
-      description: "Descrição da obra 3",
       images: ["/works/3/img1.jpg", "/works/3/img2.jpg", "/works/3/img3.jpg", "/works/3/img4.jpg"],
     },
   ];
