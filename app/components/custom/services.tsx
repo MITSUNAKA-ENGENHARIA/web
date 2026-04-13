@@ -88,7 +88,7 @@ export default function Services() {
         }
         @media (max-width: 639px) {
           .services-arrow-h { display: none; }
-          .services-arrow-v { display: block; }
+          .services-arrow-v { display: none; }
         }
       `}</style>
     </Container>
