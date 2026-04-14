@@ -14,9 +14,19 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #fffff;
+    --background: #ffffff;
     --foreground: #ededed;
   }
+}
+
+.swiper-pagination-bullet {
+  background: #57585a !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #082dd481 !important;
+  opacity: 1 !important;
 }
 
 body {
