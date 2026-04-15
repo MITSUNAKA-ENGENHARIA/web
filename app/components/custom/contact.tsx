@@ -13,7 +13,7 @@ export default function Contact() {
         maxWidth: "100%",
         margin: "auto",
         padding: "2em",
-        background: "var(--blue-12)",
+        background: "rgba(10, 25, 60, 1)",
       }}
       direction={"row"}
       justify={"center"}
