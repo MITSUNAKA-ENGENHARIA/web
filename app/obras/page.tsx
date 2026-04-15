@@ -1,66 +1,80 @@
-import Carousel from "@/app/components/custom/carousel";
 import Contact from "@/app/components/custom/contact";
+import WorkCard from "@/app/components/custom/work-card";
 
 export default function Works() {
   const works = [
     {
       title: "Obra 1",
-      description: "Descrição da obra 1",
-      images: ["/works/1/img1.jpg", "/works/1/img2.jpg", "/works/1/img3.jpg"],
+      images: ["/works/1/img1.jpg", "/works/1/img2.jpg", "/works/1/img3.jpg", "/works/1/img4.jpg"],
     },
     {
       title: "Obra 2",
-      description: "Descrição da obra 2",
-      images: ["/img3.jpg", "/img4.jpg"],
+      images: ["/works/2/img1.jpg", "/works/2/img2.jpg", "/works/2/img3.jpg", "/works/2/img4.jpg"],
     },
     {
       title: "Obra 3",
-      description: "Descrição da obra 3",
-      images: ["/img5.jpg", "/img6.jpg"],
-    },
-    {
-      title: "Obra 4",
-      description: "Outra obra",
-      images: ["/img7.jpg", "/img8.jpg"],
-    },
-    {
-      title: "Obra 5",
-      description: "Outra obra",
-      images: ["/img7.jpg", "/img8.jpg"],
-    },
-    {
-      title: "Obra 6",
-      description: "Outra obra",
-      images: ["/img7.jpg", "/img8.jpg"],
+      images: ["/works/3/img1.jpg", "/works/3/img2.jpg", "/works/3/img3.jpg", "/works/3/img4.jpg"],
     },
   ];
 
   return (
     <>
-      <div className="bg-gray-100 min-h-screen pt-24 px-6 pb-24">
-        <h1 className="text-center text-3xl mb-10">OBRAS REALIZADAS</h1>
+      <div
+        style={{
+          background: "#f3f4f6",
+          minHeight: "100vh",
+          paddingTop: "96px",
+          paddingBottom: "0",
+        }}
+      >
+        {/*titulo*/}
+        <div style={{ textAlign: "center", padding: "2.5rem 1.5rem 2.75rem" }}>
+          <h1
+            style={{
+              color: "#111827",
+              fontSize: "clamp(1.75rem, 4vw, 2.5rem)",
+              fontWeight: 700,
+              letterSpacing: "-0.01em",
+              margin: 0,
+            }}
+          >
+            Obras Realizadas
+          </h1>
+          <div
+            style={{
+              width: "48px",
+              height: "3px",
+              background: "linear-gradient(90deg, #3b82f6, #1d4ed8)",
+              borderRadius: "999px",
+              margin: "1rem auto 0",
+            }}
+          />
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/*grid*/}
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            padding: "0 1.5rem 5rem",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+            gap: "1.5rem",
+          }}
+        >
           {works.map((work, index) => (
-            <div
+            <WorkCard
               key={index}
-              className="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition"
-            >
-              <Carousel
-                imagesPaths={work.images}
-                imageDimensions={{ width: "100%", height: "650px" }}
-                rounded
-              />
-
-              <h2 className="mt-3 font-semibold text-lg">{work.title}</h2>
-
-              <p className="text-sm text-gray-600">{work.description}</p>
-            </div>
+              index={index}
+              title={work.title}
+              description={work.description}
+              images={work.images}
+            />
           ))}
         </div>
       </div>
 
-      <Contact/>
+      <Contact />
     </>
   );
 }
