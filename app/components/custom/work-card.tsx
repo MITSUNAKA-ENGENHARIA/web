@@ -4,12 +4,10 @@ import Carousel from "@/app/components/custom/carousel";
 
 interface WorkCardProps {
   title: string;
-  description: string;
   images: string[];
-  index: number;
 }
 
-export default function WorkCard({ title, description, images, index }: WorkCardProps) {
+export default function WorkCard({ title, images }: WorkCardProps) {
   return (
     <div
       style={{
@@ -48,16 +46,6 @@ export default function WorkCard({ title, description, images, index }: WorkCard
         >
           {title}
         </h2>
-        <p
-          style={{
-            color: "#6b7280",
-            fontSize: "0.875rem",
-            lineHeight: 1.6,
-            margin: 0,
-          }}
-        >
-          {description}
-        </p>
       </div>
     </div>
   );

@@ -65,9 +65,7 @@ export default function Works() {
           {works.map((work, index) => (
             <WorkCard
               key={index}
-              index={index}
               title={work.title}
-              description={work.description}
               images={work.images}
             />
           ))}
