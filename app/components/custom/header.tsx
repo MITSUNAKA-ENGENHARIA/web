@@ -162,7 +162,7 @@ export default function Header() {
             }}
           >
             <Image
-              src="/images/mnk.png"
+              src="/images/img1.jpg"
               alt="MNK Engenharia"
               width={120}
               height={120}
